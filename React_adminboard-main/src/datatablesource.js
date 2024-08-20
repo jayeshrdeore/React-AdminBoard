@@ -1,0 +1,144 @@
+export const userColumns = [
+    { field: 'id', headerName: 'ID', width: 50 },
+    {field:'user',headerName:'Customer',width:200, renderCell:(params)=>{
+        return(
+            <div className="cellWithImg">
+                <img className="cellImg" src={params.row.img} alt='avatar'/>
+                {params.row.username}
+            </div>
+
+        )
+    }},{field:'email',headerName:'Email Id',width:150},
+    {field:'mobile',headerName:'Mobile',width:150},
+    {field:'age',headerName:'Age',width:50},
+    {field:'status',headerName:'Membership',width:100,
+        renderCell:(params)=>{
+            return(
+            <div className={`cellWithStatus ${params.row.status}`}>{params.row.status}</div>
+            )
+        }    
+    },
+    {field:'location',headerName:'Location',width:100}
+]
+
+export const userRows = [
+    {
+        id:1,
+        username:"Aditi Sharma",
+        img:"https://c8.alamy.com/zooms/9/c312e4e055ab4242a798b19f5b4a249b/r5jgdy.jpg",
+        status:"active",
+        email:"aditisharma@gmail.com",
+        mobile:8080120538,
+        age:23,
+        location:"Wagholi"
+    },
+    {
+        id:2,
+        username:"aditi",
+        img:"https://c8.alamy.com/zooms/9/c312e4e055ab4242a798b19f5b4a249b/r5jgdy.jpg",
+        status:"passive",
+        email:"aditi@gmail.com",
+        mobile:8080120538,
+        age:23,
+        location:"Sikhrapur"
+    },
+    {
+        id:3,
+        username:"aditi",
+        img:"https://c8.alamy.com/zooms/9/c312e4e055ab4242a798b19f5b4a249b/r5jgdy.jpg",
+        status:"pending",
+        email:"aditi@gmail.com",
+        mobile:8080120538,
+        age:23,
+        location:"Lonikand"
+    },
+    {
+        id:4,
+        username:"aditi",
+        img:"https://c8.alamy.com/zooms/9/c312e4e055ab4242a798b19f5b4a249b/r5jgdy.jpg",
+        status:"active",
+        email:"aditi@gmail.com",
+        age:23,
+        location:"Lonikand",
+        mobile:8080120538,
+    },
+    {
+        id:5,
+        username:"aditi",
+        img:"https://c8.alamy.com/zooms/9/c312e4e055ab4242a798b19f5b4a249b/r5jgdy.jpg",
+        status:"active",
+        email:"aditi@gmail.com",
+        age:23
+    },
+    {
+        id:6,
+        username:"aditi",
+        img:"https://c8.alamy.com/zooms/9/c312e4e055ab4242a798b19f5b4a249b/r5jgdy.jpg",
+        status:"active",
+        email:"aditi@gmail.com",
+        age:23,
+        location:"Lonikand",
+        mobile:8080120538,
+    },
+    {
+        id:7,
+        username:"aditi",
+        img:"https://c8.alamy.com/zooms/9/c312e4e055ab4242a798b19f5b4a249b/r5jgdy.jpg",
+        status:"active",
+        email:"aditi@gmail.com",
+        age:23,
+        location:"Lonikand",
+        mobile:8080120538,
+    },
+    {
+        id:8,
+        username:"aditi",
+        img:"https://c8.alamy.com/zooms/9/c312e4e055ab4242a798b19f5b4a249b/r5jgdy.jpg",
+        status:"active",
+        email:"aditi@gmail.com",
+        age:23,
+        location:"Lonikand",
+        mobile:8080120538,
+    },
+    {
+        id:9,
+        username:"aditi",
+        img:"https://c8.alamy.com/zooms/9/c312e4e055ab4242a798b19f5b4a249b/r5jgdy.jpg",
+        status:"active",
+        email:"aditi@gmail.com",
+        age:23,
+        location:"Lonikand",
+        mobile:8080120538,
+    },
+    {
+        id:10,
+        username:"aditi",
+        img:"https://c8.alamy.com/zooms/9/c312e4e055ab4242a798b19f5b4a249b/r5jgdy.jpg",
+        status:"active",
+        email:"aditi@gmail.com",
+        age:23,
+        location:"Lonikand",
+        mobile:8080120538,
+    },
+    {
+        id:11,
+        username:"aditi",
+        img:"https://c8.alamy.com/zooms/9/c312e4e055ab4242a798b19f5b4a249b/r5jgdy.jpg",
+        status:"active",
+        email:"aditi@gmail.com",
+        age:23,
+        location:"Lonikand",
+        mobile:8080120538,
+    },
+    {
+        id:12,
+        username:"aditi",
+        img:"https://c8.alamy.com/zooms/9/c312e4e055ab4242a798b19f5b4a249b/r5jgdy.jpg",
+        status:"active",
+        email:"aditi@gmail.com",
+        age:23,
+        location:"Lonikand",
+        mobile:8080120538,
+    },
+
+]
